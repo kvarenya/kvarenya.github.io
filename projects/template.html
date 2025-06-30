@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Kumar Varenya | MANAWAVE</title>
+    <meta
+      name="description"
+      content="MANAWAVE - An open-source controllable, configurable, omnidirectional marquee, and design experiment."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://kvarenya.github.io/projects/manawave.html"
+    />
+    <meta property="og:title" content="Kumar Varenya | MANAWAVE" />
+    <meta
+      property="og:description"
+      content="MANAWAVE - An open-source controllable, configurable, omnidirectional marquee, and design experiment."
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Project Detail Page Styles */
+      .project-detail {
+        margin-top: var(--spacing-xxl);
+      }
+
+      .project-header-detail {
+        display: flex;
+        flex-flow: row wrap;
+        gap: var(--spacing-lg);
+        margin-bottom: 2em;
+      }
+
+      .project-meta h1 {
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .project-meta .project-role {
+        margin: 0;
+        font-size: 1rem;
+        margin-bottom: var(--spacing-xs);
+      }
+
+      .project-meta .project-date {
+        margin: 0;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-bottom: var(--spacing-sm);
+        opacity: 0.6;
+      }
+
+      .project-meta .project-link a {
+        text-decoration: underline;
+      }
+
+      .project-content {
+        margin: var(--spacing-lg) 0;
+      }
+
+      .project-content h2 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: var(--spacing-xxl);
+        margin-bottom: var(--spacing-lg);
+      }
+
+      .project-content p {
+        margin-bottom: var(--spacing-md);
+        line-height: 1.6;
+      }
+
+      .project-content ul,
+      .project-content ol {
+        margin-bottom: var(--spacing-md);
+        padding-left: var(--spacing-lg);
+      }
+
+      .project-content li {
+        margin-bottom: var(--spacing-xs);
+        line-height: 1.5;
+      }
+
+      .tech-list,
+      .optimization-list,
+      .testing-approaches,
+      .principles-list {
+        list-style: disc;
+      }
+
+      .principles-list {
+        list-style: decimal;
+      }
+
+      .project-content code {
+        background: rgba(45, 23, 36, 0.1);
+        padding: 0.05em 0.25em 0.1em;
+        font-size: 0.9em;
+      }
+
+      .project-content a {
+        text-decoration: underline;
+      }
+
+      .project-content em {
+        font-style: italic;
+      }
+
+      @media screen and (min-width: 768px) {
+        .project-header-detail {
+          margin-top: 10rem;
+          margin-bottom: 6rem;
+        }
+
+        .project-content {
+          max-width: 65ch;
+          margin: 6rem 0;
+        }
+      }
+
+      [data-theme="dark"] .project-content code {
+        background: rgba(243, 243, 243, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container margin vertical flex flex-columns flex-nowrap">
+      <header>
+        <div class="container horizontal padding">
+          <div class="block">
+            <nav>
+              <div class="nav-content">
+                <h2><a href="../index.html">Kumar Varenya</a></h2>
+                <ul class="nav-links">
+                  <li>
+                    <a class="desktop-only" href="../index.html">Home</a>
+                  </li>
+                  <li>
+                    <a class="desktop-only" href="../about.html">About</a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      id="theme-toggle-link"
+                      class="theme-toggle-link"
+                    >
+                      <span id="theme-text">Dark</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="container horizontal margin flex flex-columns flex-grow">
+        <main class="flex-grow">
+          <div class="block">
+            <article class="project-detail">
+              <header class="project-header-detail">
+                <div class="project-meta">
+                  <h1>MANAWAVE</h1>
+                  <p class="project-role">Designer / Engineer</p>
+                  <p class="project-date">Oct 2022 – present</p>
+                  <div class="project-link">
+                    <a href="https://manawave.art">Website</a>
+                  </div>
+                </div>
+              </header>
+
+              <section class="project-content">
+                <p>
+                  <a href="https://manawave.art">MANAWAVE</a> is my customized
+                  and open-source JavaScript marquee library coded entirely from
+                  scratch. It represents a vision of something I wished on the
+                  web: an omnidirectional (able to move in 360 degrees) marquee
+                  component. I treated it as both an engineering and creative
+                  challenge to demonstrate what 8 years of accumulated coding
+                  and creative experience produces.
+                </p>
+
+                <h2 class="section-heading">Technologies & Stack</h2>
+                <ul class="tech-list">
+                  <li>TypeScript</li>
+                  <li>HTML Custom Elements</li>
+                  <li>WebDriverIO</li>
+                  <li>Vite</li>
+                  <li>NX</li>
+                  <li>Astro</li>
+                  <li>Sandpack</li>
+                  <li>Github Actions</li>
+                </ul>
+
+                <h2 class="section-heading">Brief</h2>
+                <p>
+                  I built MANAWAVE to realize a vision I had for the web. I
+                  built it with what I would love as a developer exploring a new
+                  library. I know the current developer landscape has so many
+                  layers of abstraction and complexities. I wanted to work with
+                  fundamental web foundations and idioms while enabling a wide
+                  breath of expression. This would mean developers would need to
+                  adjust or learn too many new concepts. They would use their
+                  existing knowledge and quickly create results.
+                </p>
+                <p>
+                  I distilled 6 major principles to achieve this. It needs to
+                  be:
+                </p>
+                <ol class="principles-list">
+                  <li>web-native</li>
+                  <li>performant</li>
+                  <li>accessible</li>
+                  <li>familiar</li>
+                  <li>customizable</li>
+                  <li>isolated</li>
+                </ol>
+                <p>
+                  Web-native and familiarity mean that MANAWAVE behaves similar
+                  to a native HTML element like <code>marquee</code>. It comes
+                  with the same expectations. You can style everything in it
+                  with regular HTML & CSS without any workaround. It works
+                  out-of-the-box with zero configuration. It's isolated from
+                  other web elements, and doesn't affect anything beyond itself.
+                  It can integrate with most web technologies with little
+                  friction, namely accessibility and event handling. And if you
+                  want to customize, MANAWAVE offers different escape hatches
+                  beyond the defaults.
+                </p>
+                <p>
+                  There's another layer of complexity: the library must be
+                  developer-friendly. It must be documented clearly with
+                  step-by-step guides and examples. The code and file layout
+                  must be organized so that developers can easily parse through
+                  the codebase. Lastly, the code must be unit tested to provide
+                  a layer of guarantee and sanity.
+                </p>
+
+                <h2 class="section-heading">Approach</h2>
+                <p>
+                  Developing this project took multiple stages of iterations and
+                  rewrites as explore the tradeoffs of software engineering
+                  decisions. It was my first time ever building something at
+                  this scale with multiple modules and concerns at different
+                  layers of abstraction and complexity.
+                </p>
+
+                <h2 class="section-heading">Iterations and Rewrites</h2>
+                <p>
+                  I followed through multiple attempts to figure out and discern
+                  problems as they arose. I was working blind and discovering
+                  how to fulfill these requirements along the way. Inexperience
+                  was my biggest time sink. A great deal of time was spent on
+                  basically research and prototyping. I would implement a key
+                  feature not realizing the next one wouldn't work well with my
+                  given architecture. I would go on to repeat this until I
+                  started to develop an intuition for dealing with interweaving
+                  concerns.
+                </p>
+                <p>
+                  The biggest tech debt and architectural cost came from low
+                  cohesion and highly coupled code. Responsibilities and
+                  concerns for modules were often spread all over the place and
+                  I spent a lot of time refactoring. The worst part of my old
+                  code was overusing inheritance. Also, refactoring was a major
+                  time sink. I refactored before knowing what I was refactoring
+                  for. I applied design patterns to solve problems that didn't
+                  exist. The result was insane confusion. I wanted to spend time
+                  learning about design patterns and architectures which
+                  ironically made me too obsessed with them. I spent more time
+                  refactoring and fitting in unnecessary design patterns rather
+                  than solving actual problems relating to the codebase.
+                </p>
+                <p>
+                  I decided several times to rewrite everything. It was a great
+                  lesson in software engineering practices. I got more
+                  productive each time applying principles like separation of
+                  concerns and composition over inheritance. I isolated my code
+                  to single-responsibility modules and created abstractions that
+                  composed each other. It wasn't perfect, but I was able to
+                  focus on solving problems in my codebase and more importantly,
+                  writing code that didn't break each other.
+                </p>
+
+                <h2 class="section-heading">Solving Animation</h2>
+                <p>
+                  Some choices I made were based on guesses and assumptions for
+                  the underlying technology. For example, I could create a
+                  marquee easily with CSS that could animate in the 8 basic
+                  directions. I couldn't animate in any other direction though
+                  (like 24.578 degrees).
+                </p>
+                <p>
+                  This is because I was relying on the WebAnimations API and CSS
+                  to handle looping animations. It turned out that this API
+                  relied on using keyframes and CSS animations under the hood.
+                  This made <em>continual and infinite</em> animations very
+                  difficult. The truth is, I viewed the problem incorrectly. CSS
+                  animations and keyframes solve a subset of animation problems
+                  that begin and end. Another name for
+                  <em>continual and infinite</em> animations are actually
+                  physics simulations. They run under a render loop that updates
+                  its animation state over time in the simulation. No matter
+                  what I did, the WebAnimations API wouldn't be able to support
+                  this use case. I chose the WebAnimations API because the
+                  animation and render logic would happen
+                  <em>off the main thread</em> and leverage hardware
+                  acceleration using the GPU.
+                </p>
+                <p>
+                  I supported animating in any situation possible by creating
+                  abstractions for a "physics" <code>Simulation</code>. I
+                  developed <code>step</code> function that would advance the
+                  <code>Simulation</code> state. The main drawback is now I have
+                  to handle the complexities of the browser render pipeline and
+                  main thread.
+                </p>
+
+                <h2 class="section-heading">Solving Performance</h2>
+                <p>
+                  Browsers are limited by their reliance on a single main thread
+                  to calculate and render the state of the DOM. Repeated updates
+                  to the DOM is a major performance risk caused by layout
+                  thrashing. Marquees have the potential to update 100s of DOM
+                  elements on any given page. I realized optimizing the DOM and
+                  minimizing layout thrashing would be key for MANAWAVE.
+                </p>
+                <p>
+                  To wield absolute control for animations on the web, including
+                  animation or physics loops, I use
+                  <code>requestAnimationFrame</code>. It holds a serious risk of
+                  overloading the browser (being called 60 times per second).
+                  This made MANAWAVE a ticking time bomb. There were several
+                  cases that would consistently crash the browser.
+                </p>
+                <p>
+                  I spent many iterations and rewrites attempting to discern
+                  where performance was failing. I relied deeply on the browser
+                  performance profiler. It indicated that the browser paint and
+                  render operations would go on infinitely. I knew that anything
+                  relating the browser's render pipeline was a bottleneck. I had
+                  to minimize any opportunities where the browser's render
+                  pipeline would affect performance and rendering.
+                </p>
+                <p>
+                  For MANAWAVE's latest iteration, I exploited a series of
+                  performance optimizations.
+                </p>
+                <p>
+                  The architecture of the library would use a game development
+                  principle: separate render and system logic. I treat system
+                  logic calculations similar to a physics simulation update in
+                  game development. This would create a hard separation of
+                  concerns prevent system logic from unnecessarily triggering
+                  DOM updates. It simplified and isolated performance pain
+                  points when it came to optimizing them.
+                </p>
+                <p>
+                  Then, I applied the following after a lot of experimentation
+                  and back-and-forth debugging:
+                </p>
+                <ul class="optimization-list">
+                  <li>
+                    <code>absolute</code> positioning to reduce the cost of a
+                    reflow
+                  </li>
+                  <li>
+                    CSS transforms to use GPU compute off the main thread to
+                    "create" and "delete" elements
+                  </li>
+                  <li>
+                    <code>ResizeObserver</code> to calculate and update sizes
+                    without causing a reflow off the main thread
+                  </li>
+                  <li>
+                    <code>DocumentFragment</code> to batch DOM manipulations
+                    without layout thrashing when rendering new DOM elements
+                  </li>
+                  <li>
+                    a single, shared <code>requestAnimationFrame</code> for all
+                    marquees since multiple results in worse performance
+                  </li>
+                  <li>minimizing the amount DOM <code>Element</code> cloned</li>
+                </ul>
+                <p>
+                  Essentially, getting logic and state to render on the browser
+                  means computing it separately then making optimized render
+                  transactions on the browser. The points I listed solve most
+                  performance bottlenecks by moving any blocking operations off
+                  the main thread. When I need to interact with the main thread,
+                  it's concentrated and optimized for that single transaction.
+                </p>
+                <p>
+                  This resulted in a major performance boost from 100s of
+                  elements breaking or stuttering any website to near
+                  instantaneous animation and renders (&lt;5 ms to calculate,
+                  layout, paint styles).
+                </p>
+
+                <h2 class="section-heading">Solving Testing</h2>
+                <p>
+                  On top of MANAWAVE as a library, I had to make sure that it's
+                  a developer-friendly project. After all, I'm open sourcing
+                  this project. I believe open source is a commitment and
+                  responsibility if other developers derive from MANAWAVE.
+                  Documented and readable open source is a mark of care and
+                  craftsmanship. The experience has to be more than good enough.
+                </p>
+                <p>
+                  I tackle unit testing front-end code for the first time. I
+                  struggled determining how to even get started. Usually, unit
+                  testing frameworks could test raw JavaScript code in a
+                  separate runtime context. It's awkward for browsers: the
+                  <code>window</code> and <code>document</code> object are
+                  usually not available outside of browsers, but are needed to
+                  test the behavior of the DOM. There are multiple approaches
+                  that work depending on how testing is viewed on the browser.
+                </p>
+                <ul class="testing-approaches">
+                  <li>testing on a simulated browser engine (Playwright)</li>
+                  <li>
+                    testing on the browser itself, but need manual configuration
+                    with bundler (mocha, Jasmine)
+                  </li>
+                  <li>
+                    testing UIs are in the realm of e2e tests (Cypress,
+                    Selenium, webdriver)
+                  </li>
+                  <li>
+                    testing in Node.js context with mocked browser (Jest + jsdom
+                    or happy-dom)
+                  </li>
+                </ul>
+                <p>
+                  To me, I believed that it's pointless to test on simulated
+                  environments when I could test on the browser itself. Browsers
+                  are all implemented differently by engine, and testing with
+                  that assumption would catch bugs early. It turns out that
+                  webdriverIO has a feature for browser testing on the browser
+                  mixed with e2e features. I could test across Safari, Firefox,
+                  and Chrome with one command and configuration file. It was
+                  compatible with my codebase and bundler and required very
+                  little configuration to test. I tested my code across all
+                  major browsers simultatenously. This provided me safety and
+                  sanity as I was developing new features for MANAWAVE.
+                </p>
+                <p>
+                  Testing with webdriverIO wasn't a perfect approach, however. I
+                  realized that trying to match browser environments and account
+                  the for tests made the unit tests more integrated and flaky if
+                  anything. I realized that testing things within control would
+                  be better, and browser contexts are usually outside of that.
+                  I'm actually hoping to migrate towards testing on a mocked
+                  browser for more stability and isolation.
+                </p>
+
+                <h2 class="section-heading">Solving the Demo Website</h2>
+                <p>
+                  Building websites is my forte. I used Astro to build up
+                  components and implement the website as any other static site
+                  generator. Because I had absolute freedom with the websites, I
+                  decided to use this opportunity to push boundaries and
+                  experiment.
+                </p>
+                <p>
+                  I used CSS grid to enforce a modular grid across the
+                  <a href="https://manawave.art">demo site</a>. I made an
+                  assumption that it would model the same as a graphics design
+                  modular grid. In graphics design, all graphic elements share
+                  the same modular grid. In current CSS, all DOM elements follow
+                  the grid of its parent node. This is is fundamentally
+                  different and couldn't be applied trivially. A child node
+                  couldn't be aligned to the grid of an ancestor or sibling
+                  node; it isn't even aware of the external grids. I had to
+                  simulate the proposed subgrid feature by imitating and
+                  replicating parent grids that the children nodes would be
+                  aware of. This is a very flaky workaround. The subgrid
+                  proposal is the real solution to this problem.
+                </p>
+                <p>
+                  While learning Blender to make a light simulation, I learned
+                  more deeply about compositing blend modes. I used this
+                  opportunistically with CSS to determine if I could make
+                  experimental effects and optimizations. I used blend modes
+                  with video to create a novel glowing text effect on the front
+                  page to wow my audience. I'm proud that it uses a relatively
+                  cheap webm video and overlay blend mode text. It's something I
+                  would expect in more complex webgl or canvas solutions, but I
+                  used pure HTML and CSS. I'm even more proud of using blend
+                  modes to apply colors to a single animated image. Instead of
+                  having 3 images for different colors, I used blend modes to
+                  apply color to only one. This saves a significant amount of
+                  bandwidth since the images are animated.
+                </p>
+
+                <h2 class="section-heading">
+                  Solving the Documentation Website
+                </h2>
+                <p>
+                  I used the Starlight template for Astro to focus on writing
+                  documentation content. Writing documentation and step-by-step
+                  guides turned out to be way harder than I ever imagined.
+                  Trying to communicate my features comprehensively turned out
+                  to be exhausting. It's like writing a book unknowingly; it's a
+                  serious investment. I was able to get close, but I wish wrote
+                  documentation alongside developing features for my code. Not
+                  only does it clarify what my code actually does, it can
+                  identify pain points in developer experience. I was exhausted
+                  because I spent so much effort recalling my choices,
+                  decisions, and intuition. In the future, I'm hoping to
+                  automate reference documentation from code comments. Then, I
+                  want to rely on a better process to document code while
+                  developing features.
+                </p>
+                <p>
+                  I wrote my documentation inspired by Astro's documentation. It
+                  focused less on developers having to dig and form connections
+                  themselves. Instead, they teach and guide by example. They
+                  additionally offer a backdoor for reference for more advanced
+                  users. It's an approach that's accomodating for all levels of
+                  experience. By using step-by-step guides and leading users
+                  problem-by-problem and example-by-example, it gets users up to
+                  speed for the features they need. I copy this exact pattern of
+                  slowing easing users into MANAWAVE by example and guide.
+                </p>
+                <p>
+                  One experiment I tried was by implementing a customized
+                  playground for developers. I used Sandpack, a developer
+                  playground that'll allow users to code and see their results
+                  live from the browser. It was worth it because not only can I
+                  explain the code in the documentation guides, it's very easy
+                  to <em>show</em> users rather than spend ages
+                  <em>telling</em>.
+                </p>
+
+                <h2 class="section-heading">Reflection</h2>
+                <p>
+                  MANAWAVE is truly my own project and endeavor. I couldn't
+                  Google "how to make MANAWAVE". I realized that discovering how
+                  to make things work my own way was thrilling. It comes from my
+                  heart, imagination, and problem-solving — with my own two
+                  hands. MANAWAVE took way longer than I ever imagined. Even
+                  though I have released it to the public, and you can use it on
+                  a website now, I consider MANAWAVE incomplete. I'm not sure if
+                  any open-source project is ever truly done. I want to make it
+                  even better because I obssessed with what it could be.
+                </p>
+              </section>
+            </article>
+          </div>
+        </main>
+
+        <footer class="block">
+          <div class="container">
+            <section class="links">
+              <div>
+                <h2>Socials ↘</h2>
+                <ul>
+                  <li><a href="https://github.com/kvarenya">Github</a></li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/kvarenya3/"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <small>© 2025 Kumar Varenya. All rights reserved.</small>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../scripts.js"></script>
+  </body>
+</html>

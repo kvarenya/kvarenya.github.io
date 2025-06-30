@@ -12,9 +12,9 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://kvarenya.github.io/about.html" />
     <meta property="og:title" content="Kumar Varenya | About" />
-    <meta property="og:description" content="About Kumar Varenya" />
+    <meta property="og:description" content="Kumar Varenya | About" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="container margin vertical flex flex-columns flex-nowrap">
@@ -68,7 +68,7 @@
                         <h2>Amazon</h2>
                       </div>
                       <p class="job-title">
-                        Software Development Engineer Intern (AWS Relay Team)
+                        Software Development Engineer Intern (AWS Bedrock Team)
                       </p>
                       <p class="job-dates">May 2024 - December 2024</p>
                       <ul>
@@ -324,7 +324,7 @@
                       <p class="job-dates">September 2023 - April 2024</p>
                       <p class="project-description">
                         Collected and organized Minecraft gameplay data to
-                        support behavioral or AI-driven analysis.
+                        support behavioral and AI-driven analysis.
                       </p>
                     </div>
                   </div>
@@ -569,48 +569,6 @@
       </div>
     </div>
 
-    <script>
-      // Theme toggle functionality
-      window.addEventListener("load", () => {
-        const themeToggleLink = document.getElementById("theme-toggle-link");
-        const themeText = document.getElementById("theme-text");
-
-        // Check for saved theme preference or use user's system preference
-        const prefersDarkScheme = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        );
-        const savedTheme = localStorage.getItem("theme");
-
-        // Set initial theme
-        if (
-          savedTheme === "dark" ||
-          (!savedTheme && prefersDarkScheme.matches)
-        ) {
-          document.documentElement.setAttribute("data-theme", "dark");
-          themeText.textContent = "Light";
-        } else {
-          document.documentElement.setAttribute("data-theme", "light");
-          localStorage.setItem("theme", "light");
-          themeText.textContent = "Dark";
-        }
-
-        // Toggle theme on click
-        themeToggleLink?.addEventListener("click", (event) => {
-          event.preventDefault(); // Prevent default link behavior (page refresh)
-          const currentTheme =
-            document.documentElement.getAttribute("data-theme");
-
-          if (currentTheme === "dark") {
-            document.documentElement.setAttribute("data-theme", "light");
-            localStorage.setItem("theme", "light");
-            themeText.textContent = "Dark";
-          } else {
-            document.documentElement.setAttribute("data-theme", "dark");
-            localStorage.setItem("theme", "dark");
-            themeText.textContent = "Light";
-          }
-        });
-      });
-    </script>
+    <script src="scripts.js"></script>
   </body>
 </html>
