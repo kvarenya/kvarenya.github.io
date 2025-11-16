@@ -521,8 +521,25 @@ html {
   .hero,
   section {
     height: auto;
+    min-height: 0;
     scroll-snap-align: none;
     overflow-y: visible;
   }
-}
 
+  .hero {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.875rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
