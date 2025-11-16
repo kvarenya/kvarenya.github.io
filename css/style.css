@@ -15,7 +15,6 @@
   /* Typography */
   --font-main: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "Fira Code", monospace;
-  /* Secondary font for descriptive content (Tiempos Text) */
   --font-secondary: "Tiempos Text", Georgia, "Times New Roman", serif;
 
   /* Spacing */
@@ -113,6 +112,12 @@ nav {
   display: flex;
   align-items: center;
   padding-top: 5rem;
+
+  /* --- MODIFIED --- */
+  height: 100vh;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
 .hero-content {
@@ -146,40 +151,33 @@ nav {
   line-height: 1.5;
   max-width: 40ch;
   text-align: left;
-  /* Tiempos Text Regular for descriptive text */
   font-family: var(--font-secondary);
 }
-/* About Section Card Styling */
-/* This is the main card, inspired by the Anthropic banner */
 .about-card-banner {
   background-color: var(--oat);
   border-radius: 24px;
-  padding: clamp(3rem, 5vw, 4rem); /* Responsive padding */
-  max-width: 1440px; /* As requested */
-  margin: 0 auto; /* Center the card */
-  border: none; /* NO BORDER AS REQUESTED */
+  padding: clamp(3rem, 5vw, 4rem);
+  max-width: 1440px;
+  margin: 0 auto;
+  border: none;
 }
 
-/* This is the new 2-column grid inside the card */
 .about-banner-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr; /* 60/40 split, text on left */
+  grid-template-columns: 1.5fr 1fr;
   gap: 3rem;
 }
 
-/* --- Left Column --- */
 .about-banner-left {
-  /* This column is now simpler, just holding the text */
-  padding-right: 2rem; /* Add some space before the divider */
+  padding-right: 2rem;
 }
 
 .about-content p {
   font-size: clamp(1.1rem, 2.5vw, 1.2rem);
   color: var(--slate-dark);
   line-height: 1.6;
-  max-width: 70ch; /* Good reading width */
+  max-width: 70ch;
   margin-bottom: 1.5rem;
-  /* Tiempos Text Regular for descriptive text */
   font-family: var(--font-secondary);
 }
 
@@ -187,37 +185,32 @@ nav {
   margin-bottom: 0;
 }
 
-/* --- Right Column --- */
 .about-banner-right {
-  /* This column's styles are inspired by the "Learn more" section */
-  border-left: none; /* NO BORDER AS REQUESTED */
+  border-left: none;
   padding-left: 3rem;
   display: flex;
   flex-direction: column;
 }
 
-/* "Find out more" title */
 .about-links-title {
-  font-size: 0.875rem; /* Matches .section-subtitle */
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--slate-medium);
   margin-bottom: 1.5rem;
-  font-weight: 600; /* A bit stronger */
+  font-weight: 600;
 }
 
 .about-links-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Space between link items */
+  gap: 1rem;
 }
 
-/* Single Line between Resume (first-child) and CV */
 .about-links-list .about-link-item:first-child {
   border-bottom: 1px solid var(--cloud-light);
 }
 
-/* This is each "article-list-item" from the example */
 .about-link-item {
   display: flex;
   justify-content: space-between;
@@ -227,13 +220,11 @@ nav {
   text-decoration: none;
   color: var(--charcoal);
   transition: background-color 0.2s ease, transform 0.2s ease;
-  border: none; /* Placeholder for hover */
+  border: none;
 }
 
-/* Hover effect for clickable items */
 .about-link-item:not(.is-static):hover {
-  background-color: var(--ivory-medium); /* Lighten on hover */
-  /* REVERTED: No expansion on hover */
+  background-color: var(--ivory-medium);
   transform: none;
 }
 
@@ -246,11 +237,9 @@ nav {
 .about-link-text p {
   font-size: 0.9rem;
   color: var(--slate-dark);
-  /* Tiempos Text Regular for descriptive text */
   font-family: var(--font-secondary);
 }
 
-/* The SVG Icon */
 .about-link-icon {
   color: var(--slate-medium);
   transition: transform 0.2s ease, color 0.2s ease;
@@ -258,49 +247,44 @@ nav {
 
 .about-link-item:not(.is-static):hover .about-link-icon {
   transform: translateX(4px);
-  color: var(--terracotta); /* Accent on hover */
+  color: var(--terracotta);
 }
 
 .about-link-icon svg {
   width: 24px;
   height: 24px;
-  /* Ensure download icon is stroked properly */
   stroke: currentColor;
   fill: none;
 }
-/* This makes the arrow icon fill instead of stroke */
 .about-link-icon svg.g_svg {
   fill: currentColor;
   stroke: none;
 }
 
-/* The skills list, which is not a link */
 .about-link-item.is-static {
   padding: 1rem;
   background-color: transparent;
-  border: none; /* NO BORDER AS REQUESTED */
+  border: none;
 }
 
-/* Styles for the skills list (already in your file, but good to have) */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-/* Responsive adjustments for the card */
 @media (max-width: 900px) {
   .about-banner-grid {
-    grid-template-columns: 1fr; /* Stack columns */
+    grid-template-columns: 1fr;
     gap: 2.5rem;
   }
   .about-banner-left {
     padding-right: 0;
   }
   .about-banner-right {
-    border-left: none; /* Remove side border */
+    border-left: none;
     padding-left: 0;
-    border-top: none; /* NO BORDER AS REQUESTED */
+    border-top: none;
     padding-top: 2.5rem;
   }
 }
@@ -316,14 +300,14 @@ nav {
     padding: 1rem;
   }
 }
-/* =================================
-  END OF NEW CSS
-  =================================
-*/
 
-/* Section Styles */
 section {
   padding: var(--section-spacing) 0;
+
+  height: 100vh;
+  scroll-snap-align: start;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -342,14 +326,12 @@ section {
   font-weight: 500;
 }
 
-/* Grid Layout */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-/* Card Component */
 .card {
   background-color: var(--oat);
   border-radius: 24px;
@@ -367,7 +349,6 @@ section {
 .card p {
   color: var(--slate-dark);
   line-height: 1.6;
-  /* Tiempos Text Regular for project/experience/research descriptions */
   font-family: var(--font-secondary);
 }
 
@@ -395,7 +376,6 @@ section {
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  /* REVERTED: No explicit font-family, uses body font (Inter) */
 }
 
 .btn:hover {
@@ -424,6 +404,7 @@ section {
 
   .hero {
     min-height: 80vh;
+    height: 100vh;
   }
 
   .grid {
@@ -441,7 +422,6 @@ section {
   color: var(--heather);
 }
 
-/* Utility Classes */
 .mb-1 {
   margin-bottom: 1rem;
 }
@@ -457,15 +437,14 @@ section {
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
-/* Contact Section */
 .contact-section {
   text-align: center;
   padding: var(--section-spacing) 0;
 }
 
-/* This is the new black box */
 .contact-box {
   background-color: var(--charcoal);
   color: var(--ivory-light);
@@ -484,7 +463,6 @@ html {
   max-width: 40ch;
   margin: 0 auto 2rem;
   color: var(--cloud-light);
-  /* Tiempos Text Regular for contact paragraph */
   font-family: var(--font-secondary);
 }
 
@@ -506,7 +484,6 @@ html {
   border-color: var(--ivory-light);
 }
 
-/* Collapsible Section Styles */
 .grid-item-hidden {
   display: none;
 }
@@ -514,3 +491,25 @@ html {
 .collapsible-grid.expanded .grid-item-hidden {
   display: block;
 }
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem 1rem;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+}
+
