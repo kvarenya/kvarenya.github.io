@@ -513,3 +513,16 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  .hero,
+  section {
+    height: auto;
+    scroll-snap-align: none;
+    overflow-y: visible;
+  }
+}
+
