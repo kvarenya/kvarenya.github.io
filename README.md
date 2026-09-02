@@ -13,14 +13,14 @@ I'm also an **Engineering** student at the **University of British Columbia**.
 <details>
 <summary><b>See More Projects</b></summary>
 
-#### 2024
+#### 2026
 - N/A
 
-#### 2023
+#### 2025
 - N/A
 - 🎨 [Thing](https://googl.com) - Description
 
-#### 2022 and beyond...
+#### 2024 and beyond...
 - N/A
 </details>
 
