@@ -26,5 +26,5 @@ I'm also an **Engineering** student at the **University of British Columbia**.
 
 </details>
 
-Feel free to reach out anytime at `kvarenya@student.ubc.ca`
+Feel free to reach out anytime at `kumarvarenya85@gmail.com`
 
